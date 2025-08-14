@@ -9,7 +9,14 @@
     <h1>请稍候……</h1>
     <script>
       setTimeout(function(){
-        window.location.href = "https://mthorizon.com";
+        let url = window.location.href;
+        let url1 = "";
+        try{
+          url.substring(url.indexOf('/', 9));
+        }catch(e){
+          console.error(e);
+        }
+        window.location.href = "https://mthorizon.com" + url1;
       }, 1000);
     </script>
   </body>
