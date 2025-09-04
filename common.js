@@ -38,7 +38,7 @@ if(r > 0){
 function language(){
     window.location.href = "English.html";
 }
-var keywords = ["测力台", "电荷放大器", "制动测试", "温度", "数据采集", "三向力"];
+var keywords = ["MT9", "滑环", "FP-3405", "HR-TF", "6103D", "测力台"];
 var index = Math.floor(Math.random() * keywords.length);
 function updateKeyword(){
     if(index >= keywords.length){
@@ -54,7 +54,10 @@ document.getElementById("keyword").onfocus = function(){
 function search(){
     let keyword = document.getElementById("keyword").value;
     if(keyword.length > 0){
-        window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
+        //window.open("https://cn.bing.com/search?q="+keyword+"+site%3amthorizon.com");
+        if(!window.find(keyword, false, false)){
+            window.find(keyword, false, true);
+        }
     }
 }
 document.getElementById("search").onclick = search;
