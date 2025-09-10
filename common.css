@@ -82,7 +82,7 @@ div.product img{
 }
 div.product div{
     font-size: 16px;
-    width: 175px;
+    width: 343px;
     max-height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -151,7 +151,7 @@ body{
     font-family: sans-serif;
 }
 /*特殊日期使用*/
-/*ul.navigator{
+/*ul.navigator, h1{
     background-color: #666666;
 }
 ul.navigator>li>a:hover{
