@@ -1,3 +1,6 @@
+//删除下面一行代码即可恢复新版网站访问
+window.location.href = "https://mthorizon.com";
+
 function resize(){
     let width = document.body.clientWidth;
     let products = document.getElementsByClassName("product");
@@ -65,4 +68,5 @@ document.getElementById("keyword").onkeydown = function(e){
     if(e.key === "Enter"){
         search();
     }
+
 }
